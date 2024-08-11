@@ -1,9 +1,22 @@
-function Root() {
+import { Outlet } from "react-router-dom";
+import Nav from "../components/navbar";
+import Footer from "../components/footer";
+import Wrapper from "../components/wrapper";
+
+function App() {
   return (
-    <div className="m-0 box-border min-h-screen min-w-[20.438rem] max-w-[69.375rem] p-0 font-livvic">
-      <div>1231231</div>
+    <div className="selection:text-white min-h-screen font-livvic selection:bg-midnight-green">
+      <Wrapper bg="bg-midnight-green">
+        <Nav />
+      </Wrapper>
+
+      <Outlet />
+
+      <Wrapper bg="bg-dark-green">
+        <Footer />
+      </Wrapper>
     </div>
   );
 }
 
-export default Root;
+export default App;

@@ -13,26 +13,26 @@ export default function Nav() {
           </div>
 
           <ul className="text-white flex items-center gap-9 text-semi-bold-sm font-semibold">
-            <li className="transition-colors duration-200 hover:text-light-coral">
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? "text-light-coral" : "text-white"
-                }
-              >
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-light-coral" : "text-white"
+              }
+            >
+              <li className="transition-colors duration-200 hover:text-light-coral">
                 home
-              </NavLink>
-            </li>
-            <li className="transition-colors duration-200 hover:text-light-coral">
-              <NavLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive ? "text-light-coral" : "text-white"
-                }
-              >
+              </li>
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "text-light-coral" : "text-white"
+              }
+            >
+              <li className="transition-colors duration-200 hover:text-light-coral">
                 about
-              </NavLink>
-            </li>
+              </li>
+            </NavLink>
           </ul>
         </div>
 
