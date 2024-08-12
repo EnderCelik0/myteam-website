@@ -21,7 +21,7 @@ export default function Home() {
         <img
           src={bgPattern3}
           alt="bg-pattern"
-          className="absolute -right-28 bottom-0"
+          className="absolute -right-28 bottom-0 "
         />
         <Features />
       </Wrapper>
