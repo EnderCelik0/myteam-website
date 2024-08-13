@@ -11,14 +11,14 @@ export default function Contact() {
         <img
           src={bgPattern11}
           alt="bg-pattern-11"
-          className="absolute -left-24 top-1/4"
+          className="absolute -left-24 top-1/4 z-[-1]"
         />
         <img
           src={bgPattern12}
           alt="bg-pattern-12"
-          className="absolute -right-24 bottom-0"
+          className="absolute -right-24 bottom-0 z-[-1]"
         />
-        <div className="flex gap-8 py-[120px]">
+        <div className="grid grid-cols-2 gap-8 py-[120px]">
           <AskUsAbout />
           <ContactForm />
         </div>

@@ -20,7 +20,7 @@ export default function AskUsAbout() {
   ];
 
   return (
-    <div className="h-[26.75rem] text-white">
+    <div className="text-white">
       <div className="flex flex-col gap-4">
         <div>
           <h2 className="text-bold-md font-bold">Contact</h2>

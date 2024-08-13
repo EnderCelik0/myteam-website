@@ -48,7 +48,7 @@ export default function About() {
         <img
           src={bgPattern6}
           alt="bg-pattern"
-          className="absolute bottom-0 left-0"
+          className="absolute bottom-0 left-0 z-0"
         />
         <GetStarted />
       </Wrapper>
