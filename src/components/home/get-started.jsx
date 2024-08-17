@@ -8,7 +8,7 @@ export default function GetStarted() {
 
         <div>
           <NavLink to="/contact">
-            <button className="text-semibold-sm flex items-center gap-2 rounded-3xl border-2 border-state-green px-8 py-2 font-semibold transition-colors duration-200">
+            <button className="text-semibold-sm  hover:text-white flex items-center gap-2 rounded-3xl border-2 border-state-green px-8 py-2 font-semibold transition-colors duration-200 hover:bg-state-green">
               contact us
             </button>
           </NavLink>

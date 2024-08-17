@@ -12,7 +12,7 @@ export default function Nav() {
             </NavLink>
           </div>
 
-          <ul className="text-white flex items-center gap-9 text-semi-bold-sm font-semibold">
+          <ul className="flex items-center gap-9 text-semi-bold-sm font-semibold text-white">
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -36,13 +36,16 @@ export default function Nav() {
           </ul>
         </div>
 
-        <div>
-          <NavLink to="/contact">
-            <button className="text-semibold-sm border-white text-white hover:bg-white hover:text-dark-green flex items-center gap-2 rounded-3xl border-2 px-8 py-2 font-semibold transition-colors duration-200">
-              contact us
-            </button>
-          </NavLink>
-        </div>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive && "rounded-3xl bg-white text-state-green"
+          }
+        >
+          <li className="text-semibold-sm flex items-center gap-2 rounded-3xl border-2 px-8 py-2 font-semibold text-white transition-colors duration-200">
+            contact us
+          </li>
+        </NavLink>
       </div>
     </nav>
   );
