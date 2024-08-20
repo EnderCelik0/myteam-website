@@ -2,8 +2,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    // COLORS
-
     extend: {
       fontSize: {
         "bold-lg": "6.25rem",
